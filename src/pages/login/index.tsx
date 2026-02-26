@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text, View, Image } from "react-native";
+import { Text, View, Image, TextInput } from "react-native";
 
 import { styles } from "./styles";
 
@@ -13,11 +13,19 @@ export default function Login() {
                 <Image 
                     source={Logo}
                     style={styles.logo}
+                    resizeMode='contain'
                 />
-                <Text>Top</Text>
+                <Text style={styles.textTop}>Pokedex</Text>
             </View>
             <View style={styles.boxMid}>
-                <Text>Mid</Text>
+                <Text style={styles.titleInput}>E-mail</Text>
+                <View style={styles.boxInput}>
+                    <TextInput style={styles.textInput}></TextInput>
+                </View>                
+                <Text style={styles.titleInput}>Senha</Text>
+                <View style={styles.boxInput}>
+                    <TextInput style={styles.textInput}></TextInput>
+                </View>
             </View>
             <View style={styles.boxBottom}>
                 <Text>Bottom</Text>
